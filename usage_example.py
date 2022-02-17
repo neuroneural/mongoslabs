@@ -1,3 +1,4 @@
+import torch
 from torch.utils.data import DataLoader
 from gencoords import CoordsGenerator
 from mongoloader import (
@@ -10,6 +11,8 @@ from mongoloader import (
     mtransform,
 )
 
+device_name = "cuda:0" if torch.cuda.is_available() else "cpu"
+device = torch.device(device_name)
 
 # dspecifying the database location and collection name
 LABELNOW="50label"
@@ -70,7 +73,7 @@ tdataloader = DataLoader(
     tdataset,
     sampler=tsampler,
     collate_fn=mycollate_full,
-    pin_memory=True,
+    #pin_memory=True,
     worker_init_fn=createclient,
     num_workers=1, # currently does not work with <1
     )
