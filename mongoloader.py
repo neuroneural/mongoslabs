@@ -162,7 +162,7 @@ def mcollate(mlist, labelname="sublabel", cubesize=256):
 
 def collate_subcubes(mlist, coord_generator, samples=4,
                      labelname="sublabel", cubesize=256):
-    data, labels = mcollate_slabs(mlist, labelname=labelname, cubesize=cubesize)
+    data, labels = mcollate(mlist, labelname=labelname, cubesize=cubesize)
     num_subjs = labels.shape[0]
     data = data.squeeze(1)
     coords = coord_generator.get_coordinates()
