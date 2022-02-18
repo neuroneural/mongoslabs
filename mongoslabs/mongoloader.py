@@ -74,9 +74,9 @@ class MBatchSampler(Sampler):
 
 
 def create_client(worker_id,
-                  dbname="HCP",
-                  colname="hcp770",
-                  mongohost = "trendscn018.rs.gsu.edu"):
+                  dbname,
+                  colname,
+                  mongohost):
     worker_info = torch.utils.data.get_worker_info()
     dataset = worker_info.dataset
     collection = colname
