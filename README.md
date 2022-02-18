@@ -1,5 +1,5 @@
 # mongoslabs
-Dataloader that serves MRI images from a mogodb.
+Dataloader that serves MRI images from a mongodb.
 
 The main idea is to keep MRI images and corresponding training labels
 for segmentation tasks in a `mongo` database. However, each <img src="https://render.githubusercontent.com/render/math?math=256^3"> 3D MRI
