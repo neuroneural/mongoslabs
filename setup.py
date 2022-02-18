@@ -12,7 +12,10 @@
    description='Dataloader that serves MRI images from a mogodb',
    long_description=open('README.md').read(),
    install_requires=[
-       "numpy",
-       "scipy",
+       "numpy >=1.21",
+       "scipy >= 1.7",
+       "pymongo >= 4.0",
+       "torch >=1.10",
+       ""
    ],
 )
