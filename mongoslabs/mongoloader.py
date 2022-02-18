@@ -6,7 +6,7 @@ from pymongo import MongoClient
 import torch
 from torch.utils.data import Dataset
 from torch.utils.data.sampler import Sampler
-from gencoords import CoordsGenerator
+from mongoslabs.gencoords import CoordsGenerator
 
 
 class MongoDataset(Dataset):
