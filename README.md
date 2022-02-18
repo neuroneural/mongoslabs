@@ -12,7 +12,7 @@ atlas. (The scripts to populate such collection are upcoming.)
 
 # installation
 
-Eventually, the package will be placed on `pypy`, but for now, first
+Eventually, the package will be placed on `pypi`, but for now, first
 clone the repo:
 ```
 git clone git@github.com:neuroneural/mongoslabs.git
