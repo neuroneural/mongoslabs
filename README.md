@@ -12,4 +12,17 @@ atlas. (The scripts to populate such collection are upcoming.)
 
 # installation
 
+Eventually, the package will be placed on `pypy`, but for now, first
+clone the repo:
+```
+git clone git@github.com:neuroneural/mongoslabs.git
+```
+Then change directory to the newly cloned repository:
+```
+cd mongoslabs
+```
+And install locally by
+```
+pip intall -e .
+```
 # usage
