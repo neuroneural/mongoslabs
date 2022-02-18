@@ -7,7 +7,7 @@ setup(name='mongoslabs',
       packages=['mongoslabs'],
       url='http://pypi.python.org/pypi/mongoslabs/',
       license='MIT',
-      description='Dataloader that serves MRI images from a mogodb',
+      description='Dataloader that serves MRI images from a mongodb',
       long_description=open('README.md').read(),
       install_requires=[
           "numpy",
