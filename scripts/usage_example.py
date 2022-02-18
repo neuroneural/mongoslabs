@@ -1,7 +1,7 @@
 import torch
 from torch.utils.data import DataLoader
-from gencoords import CoordsGenerator
-from mongoloader import (
+from mongoslabs.gencoords import CoordsGenerator
+from mongoslabs.mongoloader import (
     create_client,
     collate_subcubes,
     mcollate,
@@ -34,7 +34,10 @@ coord_generator = CoordsGenerator(volume_shape, subvolume_shape)
 
 # wrapper functions
 def createclient(x):
-    return create_client(x, dbname=DBNAME, colname=COLLECTION)
+    return create_client(x,
+                         dbname=DBNAME,
+                         colname=COLLECTION,
+                         mongohost=MONGOHOST)
 
 def mycollate_full(x):
     return mcollate(x, labelname=LABELNOW)
@@ -73,6 +76,7 @@ tdataloader = DataLoader(
     tdataset,
     sampler=tsampler,
     collate_fn=mycollate_full,
+    # if you want the loader to place batch on GPU and at a fixed location
     #pin_memory=True,
     worker_init_fn=createclient,
     num_workers=1, # currently does not work with <1
