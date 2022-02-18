@@ -26,3 +26,8 @@ And install locally by
 pip intall -e .
 ```
 # usage
+A detailed example of how to create a dataloader using provided
+dataset class and the corresponding tools is in
+`scripts/usage_example.py`
+
+Do not forget to move the batches to the GPU once obtained.
