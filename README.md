@@ -10,7 +10,7 @@ tensor stored across 8 records, together with corresponding labels
 either for gray and white matter, 104 regions atlas, or a 50 region
 atlas. (The scripts to populate such collection are upcoming.)
 
-![load](./mongoslabs_load.gif)
+<img src="./mongoslabs_load.gif" width="50%"/>
 An example of maintaining a high utilization on 4 GPUs
 
 # installation
