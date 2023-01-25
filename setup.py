@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="mongoslabs",
-    version="0.0.4",
+    version="0.0.1",
     author="Sergey Plis",
     author_email="s.m.plis@gmail.com",
     packages=["mongoslabs"],
