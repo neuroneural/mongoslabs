@@ -10,11 +10,14 @@ tensor stored across 8 records, together with corresponding labels
 either for gray and white matter, 104 regions atlas, or a 50 region
 atlas. (The scripts to populate such collection are upcoming.)
 
-<img src="https://raw.githubusercontent.com/paavalipopov/mongoslabs/main/.github/images/mongoslabs_load.gif" width="50%"/>
+<img src="https://raw.githubusercontent.com/neuroneural/mongoslabs/pypi/.github/images/mongoslabs_load.gif" width="50%"/>
+
+**change https://raw.githubusercontent.com/neuroneural/mongoslabs/pypi/.github/images/mongoslabs_load.gif" to https://raw.githubusercontent.com/neuroneural/mongoslabs/main/.github/images/mongoslabs_load.gif" after it is merged with main**
+
 An example of maintaining a high utilization on 4 GPUs
 
 # installation
-*** Update this after it is uploaded to pypi ***
+**Update this after it is uploaded to pypi**
 
 Eventually, the package will be placed on `pypi`, but for now, first
 clone the repo:
